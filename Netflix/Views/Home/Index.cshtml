@@ -2,7 +2,33 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<div class="wrap-form" style="background-color:black">
+    
+    <div class="text-center mb-4">
+            <br /><br /><br /><br />
+            <h1 class="h3 mb-3 font-weight-normal" style="color:red"><strong style="font-size: 55px">NETFLIX</strong></h1>
+            <br />
+    </div>
+        @*<div asp-validation-summary="All" class="text-danger"></div>*@
+        <form asp-controller="Movie" asp-action="MovieList" method="post" class="form-signin">
+            <div class="form-group">
+                @*<label asp-for="Email" class="control-label text-muted">Email</label>
+                <input asp-for="Email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" required>
+                <div><span asp-validation-for="UserName" class="text-danger"></span></div>*@
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="Password" class="control-label text-muted">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password" required>*@
+            </div>
+
+            @*<div class="form-group align-center">
+                <button type="submit" class="btn btn-danger btn-lg">Sign In</button>
+                <span class="btn-signup text-muted">&nbsp;&nbsp;If you do not have account, Please go to <a asp-controller="Users" asp-action="Create" class="font-weight-bold">sign up!</a></span>
+            </div>*@
+        </form>
 </div>
